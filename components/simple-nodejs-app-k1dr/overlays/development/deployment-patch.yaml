@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-k1dr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-mbou-tenant/nodejs-users/simple-nodejs-app-k1dr@sha256:b9ef7415c31b97475140ea86d3319ee43c1d37c69edaf87b6785c30995d4b874
+        name: my-nodejs
+        resources: {}
+status: {}
